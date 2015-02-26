@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Grocery Shopping Helper</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment4.css">
+    <script src="js/Assignment4.js"></script>
+</head>
+
+<body>
+    <div id="header">
+    <h1>Grocery Shopping Helper</h1>
+    <select onchange="MenuChoice()" id="menu">
+        <option>Please select an option</option>
+        <option>Show Area 1</option>
+        <option>Show Area 2</option>
+    </select>
+    <hr />
+    </div>
+    <section id="grocerylist">
+        <img id="imagelist"  src="images/shoppinglist.jpg">
+        <br />
+        <h2>Create your own grocery list!</h2>
+        <br />
+        <label>Please type the grocery list item, and it will appear below:</label>
+        <input type="text" id="item">
+        <button onclick="CreateList()">Add to List</button>
+        <button onclick="DeleteList()">Clear List</button>
+        <hr />
+        <div id="grocerylistdisplay">
+            <p>This list will be displayed  below here:</p>
+            <p id="ldisplay"></p>
+        </div>
+        <footer id="grocerylistfooter">Joseph Evans <br /> joev@uab.edu</footer>
+    </section>
+    <section id="grocerycalculator">
+        <img id="grocerycal" src="images/index.png">
+        <br/>
+        <h2>Grocery Calculator</h2>
+        <br />
+        <label>Please input how much the item costs:</label>
+        <input type="Number" id="itemcost">
+        <button onclick="CalculateTotal()">Calculate Running Total</button>
+        <button onclick="Revert()">Revert to 0</button>
+        <hr />
+        <div id="totaldisplay">
+            <p>The running  total will be displayed below:</p>
+            <div id="dollarsign"><p>$</p></div><div id="runningtotal"><p id=runtotal>0.00</p></div>
+        </div>
+        <footer id="grocerycalfooter">Joseph Evans <br /> joev@uab.edu</footer>
+    </section>
+    
+
+
+
+</body>
+</html>

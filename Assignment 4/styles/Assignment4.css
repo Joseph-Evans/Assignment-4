@@ -2,7 +2,6 @@
 {
     visibility: hidden;
     position: absolute;
-    overflow: scroll;
     width: 600px;
     font-size: 8pt;
     background-color: #90C5A9;
@@ -36,13 +35,14 @@
 {
     float: left;
     width: 2%;
+    font-weight: bold;
 }
 
 #runningtotal
 {
     float: right;
     width: 98%;
-    position: 
+    font-weight: bold;
 }
 
 #grocerylistfooter
@@ -69,6 +69,6 @@ h2
 
 h1
 {
-    16pt;
+   font-size: 14pt;
 }
 
